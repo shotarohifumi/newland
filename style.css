@@ -46,3 +46,8 @@ button{
 button:hover{
     opacity:1;
 }
+
+.ceo img{
+    width: 300px;
+    height: auto;
+}
