@@ -21,6 +21,4 @@ $(function () {
         $(this).next().slideToggle();
         $(this).toggleClass("on");
     })
-
-    $('.slider').slick({})
 })

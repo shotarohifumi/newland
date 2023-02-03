@@ -103,3 +103,7 @@ footer{
     justify-content: space-around;
     text-align: center;
 }
+
+.ceo div {
+    display: flex;
+}
