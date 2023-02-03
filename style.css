@@ -32,6 +32,9 @@ header2 ul li{
     cursor: pointer;
     border-radius: 10%;
 }
+body{
+    text-align: center;
+}
 
 button{
     position: fixed;
@@ -51,20 +54,30 @@ button:hover{
     width: 300px;
     height: auto;
 }
-
-.question{
+.accordi{
+    text-align: start;
+}
+.question {
+    background-color:lightblue;
+    position: relative;
+    cursor: pointer;
+}
+.question, .answer{
     padding: 10px;
-    background-color: rgb(64, 64, 102);
-    color: white;
-    border: solid 1px;
-  }
+    border: solid .5px;
+    list-style: none;
+    margin-bottom: 5px;
+}
 
-  .answer{
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-    border: solid 0px;
-  }
+.question.on::before {
+    display: none;
+}
 
-  .ceo div{
+.answer {
+    background-color: rgb(230, 160, 75);
+    display: none;
+}
+
+.ceo div {
     display: flex;
-  }
+}
