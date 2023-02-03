@@ -9,7 +9,7 @@ $(function () {
         if (position + wh >= btn) {
             $("button").removeClass("btn");
         }
-        console.log(position);
+        //console.log(position);
         if (position == 0) {
             $("button").addClass("btn")
         }
