@@ -2,11 +2,9 @@ $(function () {
     $(window).on("scroll", function () {
         let btn = $("button").offset().top;
 
-        let wh = $(window).height();
-
         let position = $(window).scrollTop();
 
-        if (position + wh >= btn) {
+        if (position >= btn) {
             $("button").removeClass("btn");
         }
         //console.log(position);
