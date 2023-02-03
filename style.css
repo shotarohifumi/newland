@@ -85,6 +85,7 @@ button:hover{
     display: none;
 }
 
+<<<<<<< HEAD
 footer{
     background-color: lightgray;
 }
@@ -104,3 +105,9 @@ footer{
     justify-content: space-around;
     text-align: center;
 }
+=======
+.slide img{
+    width: 1100px;
+    height: auto;
+}
+>>>>>>> 48931cf92e002fe53c0c177b7df46701e618413e
