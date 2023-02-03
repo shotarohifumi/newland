@@ -85,3 +85,7 @@ button:hover{
 .ceo div {
     display: flex;
 }
+
+.btn{
+    display: none;
+}
