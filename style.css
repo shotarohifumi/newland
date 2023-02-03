@@ -84,3 +84,8 @@ button:hover{
 .btn{
     display: none;
 }
+
+.slide img{
+    width: 1100px;
+    height: auto;
+}

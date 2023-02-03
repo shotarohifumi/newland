@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>newland</title>
     <script src="https://kit.fontawesome.com/aa41083d68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header1>
         <div class="header-left">
             <img src="./img/logo.png" alt="logo">
-           <p>比嘉登記事務所</p>
+            <p>比嘉登記事務所</p>
         </div>
         <div class="header-right">
             <div class="address">沖縄県中頭郡中城村xxx-xxx</div>
@@ -33,6 +37,7 @@
     <main>
         <div class="slide">
             <img src="./img/  slide1.jpg" alt="">
+            <img src="./img/  slide2.png" alt="">
         </div>
 
         <div class="ceo">
@@ -48,24 +53,33 @@
 
         <div class="accordi">
             <h2>よくある質問</h2>
-            
+
             <ul>
-                <li class="question">土地家屋調査士とは？   <i class="fa-solid fa-circle-down"></i></li>
+                <li class="question">土地家屋調査士とは？ <i class="fa-solid fa-circle-down"></i></li>
                 <li class="answer">土地家屋調査士は、不動産に関する法律と技術のプロフェッショナルです。
                     土地や建物は所有者にとって、とても大切な財産です。法務局で管理している登記簿に登録することにより大切な財産の権利が守られます。</li>
-                <li class="question">土地の登記ってなに？   <i class="fa-solid fa-circle-down"></i></li>
+                <li class="question">土地の登記ってなに？ <i class="fa-solid fa-circle-down"></i></li>
                 <li class="answer">大切な財産である土地の登記手続きを行うことで、土地の権利を明確にするとともに、土地を守ることにもつながります。</li>
-                <li class="question">建物の登記ってなに？   <i class="fa-solid fa-circle-down"></i></li>
+                <li class="question">建物の登記ってなに？ <i class="fa-solid fa-circle-down"></i></li>
                 <li class="answer">新築したとき・増築・改築したとき・取り壊したときは法務局に申請する必要があります。</li>
         </div>
 
-       
+
         <button class="btn">top</button>
     </main>
     <footer>
 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            autoplay: true,
+            dots: true,
+        });
+    </script>
     <script src="./script.js"></script>
 </body>
+
 </html>
