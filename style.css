@@ -77,10 +77,6 @@ button:hover{
     display: none;
 }
 
-.ceo div {
-    display: flex;
-}
-
 .btn{
     display: none;
 }
@@ -96,6 +92,9 @@ footer{
 }
 .lastmenu ul li{
     background-color: lightblue;
+    cursor: pointer;
+}
+#info p, ul li{
     cursor: pointer;
 }
 
