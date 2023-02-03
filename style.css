@@ -1,6 +1,8 @@
 *{
     padding: 5px 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
 }
 
 header1{
@@ -31,9 +33,6 @@ header2 ul li{
     background-color: lightblue;
     cursor: pointer;
     border-radius: 10%;
-}
-body{
-    text-align: center;
 }
 
 button{
