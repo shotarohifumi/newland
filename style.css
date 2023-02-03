@@ -71,11 +71,6 @@ button:hover{
 .question.on::before {
     display: none;
 }
-.fa-solid fa-circle-down{
-    position: fixed;
-    right: ;
-
-}
 
 .answer {
     background-color: rgb(230, 160, 75);
