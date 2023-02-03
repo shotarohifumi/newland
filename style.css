@@ -35,7 +35,7 @@ header2 ul li{
     border-radius: 10%;
 }
 
-button{
+.figtop{
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -45,7 +45,7 @@ button{
     cursor: pointer;
     opacity: 0.5;
 }
-button:hover{
+.figtop:hover{
     opacity:1;
 }
 
