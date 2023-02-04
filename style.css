@@ -2,7 +2,6 @@
     padding: 5px 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    margin: 0 auto;
 }
 
 header1{
@@ -10,14 +9,17 @@ header1{
     justify-content: space-around;
     text-align: center;
 }
-
-.header-left img{
-    width: 100px;
-}
 .header-left{
     display: flex;
-    font-size: 2rem;
 }
+.header-left p {
+    font-size: 2rem;
+    padding-top: 35px;
+}
+.header-left img{
+    width: 150px;
+}
+
 .header-right{
     font-size: 1.5rem;
     padding-top: 35px;
@@ -35,6 +37,64 @@ header2 ul li{
     border-radius: 10%;
 }
 
+.slide-container{
+    display: flex;
+    transition: all 1s ease;
+    width: 100%;
+    height: 400px;
+}
+
+.container-wrap{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.left-arrow, .right-arrow{
+    cursor: pointer;
+}
+
+.left-arrow{
+    content: "";
+    width: 20px;
+    height: 37px;
+    border-bottom: solid 2px orange;
+    border-right: solid 2px orange;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50px;
+    transform: rotate(128deg);
+}
+
+.right-arrow{
+    content: "";
+    width: 20px;
+    height: 37px;
+    border-bottom: solid 2px orange;
+    border-right: solid 2px orange;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 30px;
+    transform: rotate(-45deg);
+}
+
+.slide{
+    min-width: 110%;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(1){
+    background-image: url(./img/\ \ slide1.jpg);
+    height: 400px;
+    width: 1000px;
+}
+.slide:nth-child(2){
+    background-image: url(./img/sizechangedimg2.png);
+    height: 400px;
+    width: 1000px;
+}
 .figtop{
     position: fixed;
     bottom: 50px;
@@ -44,11 +104,15 @@ header2 ul li{
     background-color: yellow;
     cursor: pointer;
     opacity: 0.5;
+    padding: 15px 20px;
+    border-radius: 30%;
 }
 .figtop:hover{
     opacity:1;
 }
-
+.ceo{
+    padding-top: 40px;
+}
 .ceo img{
     width: 300px;
     height: auto;
@@ -71,7 +135,9 @@ header2 ul li{
 .question.on::before {
     display: none;
 }
-
+.c{
+    display: none;
+}
 .answer {
     background-color: rgb(230, 160, 75);
     display: none;
