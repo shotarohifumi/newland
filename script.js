@@ -41,4 +41,19 @@ $(function () {
         }
     })
 
+    $('.modal-btn').on('click',function () {
+        $('.modal-container').addClass('on');
+      });
+    
+      $('.close-btn-wrap').on('click',function () {
+        $('.modal-container').removeClass('on');
+      })
+
+      $('.modal-btn2').on('click',function () {
+        $('.modal-container').addClass('on');
+      });
+    
+      $('.close-btn-wrap').on('click',function () {
+        $('.modal-container').removeClass('on');
+      })
 })
