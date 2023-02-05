@@ -1,19 +1,19 @@
 $(function () {
     $(window).on("scroll", function () {
-        let btn = $("button").offset().top;
+        let btn = $(".figtop").offset().top;
 
         let position = $(window).scrollTop();
 
         if (position >= btn) {
-            $("button").removeClass("btn");
+            $(".figtop").removeClass("btn");
         }
         //console.log(position);
         if (position == 0) {
-            $("button").addClass("btn")
+            $(".figtop").addClass("btn")
         }
     })
 
-    $("button").on("click", function () {
+    $(".figtop").on("click", function () {
         $("body,html").animate({ scrollTop: 0 }, 500);
     })
 
