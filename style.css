@@ -173,7 +173,9 @@ footer{
 .ceo div {
     display: flex;
 }
-
+.ceo img{
+    border-radius: 50%;
+}
 h2{
     font-size: 35px;
 }
