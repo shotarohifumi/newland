@@ -41,19 +41,26 @@ $(function () {
         }
     })
 
-    $('.modal-btn').on('click',function () {
-        $('.modal-container').addClass('on');
+    $('.modal-btn1').on('click',function () {
+        $('.modal-container1').addClass('on');
       });
     
       $('.close-btn-wrap').on('click',function () {
-        $('.modal-container').removeClass('on');
+        $('.modal-container1').removeClass('on');
       })
 
       $('.modal-btn2').on('click',function () {
-        $('.modal-container').addClass('on');
+        $('.modal-container2').addClass('on');
       });
     
       $('.close-btn-wrap').on('click',function () {
-        $('.modal-container').removeClass('on');
+        $('.modal-container2').removeClass('on');
+      })
+      $('.modal-btn3').on('click',function () {
+        $('.modal-container3').addClass('on');
+      });
+    
+      $('.close-btn-wrap').on('click',function () {
+        $('.modal-container3').removeClass('on');
       })
 })
