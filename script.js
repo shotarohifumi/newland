@@ -1,4 +1,5 @@
 $(function () {
+  // スクロール
     $(window).on("scroll", function () {
         let btn = $(".figtop").offset().top;
 
@@ -22,6 +23,7 @@ $(function () {
         $(this).toggleClass("on");
     })
 
+// スライド
     let index=0;
     let slideMax=$(".slide").length;
     // console.log(slideMax);
@@ -31,8 +33,7 @@ $(function () {
           num = index * -1 * 100;
           $('.slide-container').css({'transform':`translateX(${num}%)`});
         }
-      })
-    
+      })  
     $('.left-arrow').on('click',function () {
         if (index !== 0) {
           index--;
@@ -40,7 +41,8 @@ $(function () {
           $('.slide-container').css({'transform':`translateX(${num}%)`})
         }
     })
-
+    
+// Modal
     $('.modal-btn1').on('click',function () {
         $('.modal-container1').addClass('on');
       });
