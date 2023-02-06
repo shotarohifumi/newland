@@ -163,8 +163,13 @@ header2 ul li{
 
 /* フッター */
 footer{
-    background-color: lightgray;
     margin-top: 50px;
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 15% 15%;
+    background-size: 12%;
+    background-color: rgba(223, 255, 255, 0.8);
+    background-blend-mode: lighten;
 }
 .lastmenu ul{
     display: flex;
@@ -174,6 +179,10 @@ footer{
 .lastmenu ul li{
     background-color: lightblue;
     cursor: pointer;
+}
+#info{
+    position: relative;
+    left: 94px;
 }
 #info p, ul li{
     cursor: pointer;
