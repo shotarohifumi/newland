@@ -42,8 +42,6 @@ header2 ul li{
 .slide-container{
     display: flex;
     transition: all 1s ease;
-    width: 100%;
-    height: 400px;
 }
 .container-wrap{
     width: 100%;
@@ -78,19 +76,20 @@ header2 ul li{
     transform: rotate(-45deg);
 }
 .slide{
-    min-width: 110%;
+    min-width: 100%;
     text-align: center;
     background-repeat: no-repeat;
 }
 .slide:nth-child(1){
     background-image: url(./img/\ \ slide1.jpg);
-    height: 400px;
-    width: 1000px;
+    background-size: 100%;
+    aspect-ratio: 5/2;
+    margin-right: 60px;
 }
 .slide:nth-child(2){
     background-image: url(./img/sizechangedimg2.png);
-    height: 400px;
-    width: 1000px;
+    background-size: 100%;
+    aspect-ratio: 5/2;
 }
 
 /* 上に行くボタン */
