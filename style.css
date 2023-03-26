@@ -4,6 +4,12 @@
     text-align: center;
 }
 
+/* その他 */
+h2{
+	font-size: 1.5rem;
+	display: flex;
+}
+
 /* 一番上 */
 header1{
     display: flex;
@@ -25,6 +31,31 @@ header1{
     padding-top: 35px;
 }
 
+@media screen and (max-width:767px){
+	header1{
+		display: block;
+	}
+	.header-left{
+		justify-content: space-around;
+	}
+	.header-left p{
+		font-size: 2rem;
+		padding-top: 40px;
+	}
+	.header-left img{
+		width: 150px;
+	}
+	.header-right{
+		padding-top: 10px;
+		font-size: 1.5rem;
+		display: flex;
+		justify-content: space-around;
+	}
+	.phonenm{
+		padding-top: 8px;
+	}
+}
+
 /* 冒頭メニュー */
 header2 ul{
     display: flex;
@@ -37,7 +68,11 @@ header2 ul li{
     border-radius: 10%;
     border: solid 1px gray;
 }
-
+@media screen and (max-width:767px){
+	header2 ul li{
+		font-size: 0.5rem;
+	}
+}
 /* slider */
 .slide-container{
     display: flex;
@@ -60,6 +95,18 @@ header2 ul li{
     position: absolute;
 		top: 245px;
 		right: 3px;
+}
+@media screen and (max-width:767px){
+	.left-arrow{
+    position: absolute;
+		top: 107px;
+		left: -30px;
+}
+.right-arrow{
+    position: absolute;
+		top: 107px;
+		right: -30px;
+}
 }
 /* .left-arrow{
     content: "";
@@ -139,6 +186,128 @@ header2 ul li{
     position: relative;
     top: 50px;
 }
+@media screen and (max-width:767px){
+	h2{
+		display: block;
+	}
+	.ceo div{
+		display: block;
+	}
+	.ceo p{
+		top: 20px;
+		text-align: left;
+	}
+}
+
+/* modalの部分 */
+.works{
+	margin-top: 50px;
+}
+.works h2{
+	margin-bottom: 20px;
+}
+.modal-container1{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.432);
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -1;
+	transition: all .5s ease;
+} 
+.modal-container1.on{
+	z-index: 2;
+	opacity: 1;
+}
+.modal-container2{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.432);
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -1;
+	transition: all .5s ease;
+} 
+.modal-container2.on{
+	z-index: 2;
+	opacity: 1;
+}
+.modal-container3{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.432);
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -1;
+	transition: all .5s ease;
+}
+.modal-container3.on{
+	z-index: 2;
+	opacity: 1;
+}
+.modal-message{
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+} 
+.modal-close{
+	display: block;
+	content: '';
+	width: 27px;
+	height: 10px;
+	background-color: #000;
+	position: relative;
+	right: 0;
+	top: 10px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+.modal-close::before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 8px;
+	background-color: #000;
+	top: 0;
+	right: 0;
+	transform: rotate(90deg);
+}
+.modals{
+	display: flex;
+	justify-content: space-around;
+} 
+.close-btn-wrap{
+	text-align: right;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: 20px;
+}
+.modal-btn1, .modal-btn2, .modal-btn3{
+	cursor: pointer;
+	background-color: lightblue;
+	border-radius: 10px;
+	border: solid 1px gray;
+}
 
 /* アコーディオン */
 .accordi{
@@ -212,119 +381,24 @@ footer{
 footer p:last-child{
     font-size: .8rem;
 }
-
-/* その他 */
-h2{
-    font-size: 1.5rem;
-    display: flex;
-}
-
-/* modalの部分 */
-.works{
+@media screen and (max-width:767px){
+	footer{
     margin-top: 50px;
-}
-.works h2{
-    margin-bottom: 20px;
-}
-.modal-container1{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.432);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
-    transition: all .5s ease;
-} 
-.modal-container1.on{
-    z-index: 2;
-    opacity: 1;
-}
-.modal-container2{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.432);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
-    transition: all .5s ease;
-} 
-.modal-container2.on{
-    z-index: 2;
-    opacity: 1;
-}
-.modal-container3{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.432);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
-    transition: all .5s ease;
-}
-.modal-container3.on{
-    z-index: 2;
-    opacity: 1;
-}
-.modal-message{
-    width: 400px;
-    height: 400px;
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
-} 
-.modal-close{
-    display: block;
-    content: '';
-    width: 27px;
-    height: 10px;
-    background-color: #000;
-    position: relative;
-    right: 0;
-    top: 10px;
-    transform: rotate(45deg);
-    cursor: pointer;
-}
-.modal-close::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 8px;
-    background-color: #000;
-    top: 0;
-    right: 0;
-    transform: rotate(90deg);
-}
-.modals{
-    display: flex;
-    justify-content: space-around;
-} 
-.close-btn-wrap{
-    text-align: right;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    margin-left: auto;
-    margin-right: 20px;
-}
-.modal-btn1, .modal-btn2, .modal-btn3{
-    cursor: pointer;
-    background-color: lightblue;
-    border-radius: 10px;
-    border: solid 1px gray;
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    background-size: 40%;
+    background-color: rgba(223, 255, 255, 0.8);
+    background-blend-mode: lighten;
+  }
+	.container{
+		display: block;
+		padding-top: 300px;
+	}
+	#info{
+		left: 0px;
+	}
+	#map{
+		margin: 10px auto;
+	}
 }
