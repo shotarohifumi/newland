@@ -52,6 +52,16 @@ header2 ul li{
     cursor: pointer;
 }
 .left-arrow{
+    position: absolute;
+		top: 245px;
+		left: 3px;
+}
+.right-arrow{
+    position: absolute;
+		top: 245px;
+		right: 3px;
+}
+/* .left-arrow{
     content: "";
     width: 20px;
     height: 37px;
@@ -74,7 +84,7 @@ header2 ul li{
     top: 50%;
     right: 30px;
     transform: rotate(-45deg);
-}
+} */
 .slide{
     min-width: 100%;
     text-align: center;
